@@ -4,5 +4,6 @@ Usage:
 
 vagrant up;
 vagrant ssh
-create files in folder1 and check folder2
-cat /var/log/logged-in.log
+create files in folder1  
+check folder2
+
