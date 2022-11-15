@@ -1,11 +1,8 @@
-Hometask3
+Hometask5
 
 Usage: 
 
-vagrant up 
-
-vagrant ssh crvm 
-
-sudo -i 
-
-tail -f /var/log/sysinfo.log
+vagrant up;
+vagrant ssh
+create files in folder1 and check folder2
+cat /var/log/logged-in.log
