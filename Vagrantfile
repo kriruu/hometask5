@@ -14,14 +14,13 @@ Vagrant.configure("2") do |config|
     
     vm5.vm.provision "shell", run: "always",  inline: <<-SHELL
         echo "Hello from the Centos VM"
-	    	mkdir /var/folder1
+	mkdir /var/folder1
         mkdir /var/folder2
         cat /vagrant/mv.service > /etc/systemd/system/mv.service
         systemctl daemon-reload
         systemctl start mv.service
         systemctl enable mv.service
-        cd /etc/cron.d
-        echo '* * * * * root systemctl status mv.service>>/var/log/logged-in.log'> mycron
+        
     SHELL
   end
   
